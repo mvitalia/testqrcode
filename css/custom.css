@@ -1,0 +1,134 @@
+/* Button*/
+.link {display: block;height:35px;line-height: 35px;font-weight: normal}
+
+.box_submit_button {text-align:center}
+.box_submit_button a, .box_submit_button input {
+    border: none !important;
+    font-style: normal !important;
+    text-transform: uppercase;
+    font-size:14px;
+    color:#fff !important;
+    line-height: 48px !important;
+    height: 50px;
+    background: #004175 !important
+}
+.box_submit_button a {width:49%}
+.box_submit_button a i {margin-left:-5px;padding-right:5px;}
+
+
+.margin-bottom-5{
+    margin-bottom: 5px;
+}
+
+.box_notifica{
+    position: fixed;
+   bottom: 0px;
+   left:0;
+     width: 100%;
+    z-index: 1900;
+   
+}
+
+.allargaNot{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.tipo_dispositivo h4 a, .tipo_dispositivo i{color:#3c763d !important}
+.tipo_extra h4 a, .tipo_extra i{color:#004175 !important}
+
+.btn_cancella_notifica{
+    position: absolute;
+    top:5px;
+    right:10px;
+    padding: 10px;
+    font-style: 20px
+}
+.box_notifica_extra{
+    color: #31708f !important;
+    background-color: #d9edf7 !important;
+    border-color: #bce8f1 !important;
+}
+.box_notifica_dispositivo{
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+    color: #3c763d !important;
+}
+.btn_tipologia_notifica{position:absolute; bottom:5px;right:10px;padding: 10px}
+
+.tendina_mappa{
+    font-size:13px;
+}
+
+.privacy_policy_margin{
+    margin-top:100px;
+}
+
+.font_colore_titolo{
+    color: #fff !important;
+     font-size: 22px;
+    font-weight: 400 !important;
+}
+
+.grandezza_img_database{
+    width: 50% !important;
+}
+
+.paragrafo_center{
+    text-align: center !important;
+}
+.margine_form{
+    margin-top:80px;
+    padding: 15px;
+}
+
+.white{
+    background: #fff;
+}
+
+input.valid[type="text"], input.valid[type="text"]:focus, input.valid[type="password"], input.valid[type="password"]:focus, input.valid[type="email"], input.valid[type="email"]:focus, input.valid[type="url"], input.valid[type="url"]:focus, input.valid[type="time"], input.valid[type="time"]:focus, input.valid[type="date"], input.valid[type="date"]:focus, input.valid[type="datetime-local"], input.valid[type="datetime-local"]:focus, input.valid[type="tel"], input.valid[type="tel"]:focus, input.valid[type="number"], input.valid[type="number"]:focus, input.valid[type="search"], input.valid[type="search"]:focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus {
+    border-bottom: 0.5px solid #AEAEAE;
+    box-shadow: 0 0.5px 0 0 #AEAEAE;
+}
+
+#btn_box_recuperoPassword{
+    display: none;
+}
+
+#btn_box_recuperoPasswordFailed{
+    display: none;
+}
+
+#btn_box_Login{
+    display: none;
+}
+
+#btn_box_LoginFailed{
+    display: none;
+}
+
+#btn_box_Registrazione{
+    display: none;
+}
+
+#btn_box_infoNotifica{
+    display: none;
+}
+
+#btn_box_infoMvitalia{
+    display: none;
+}
+
+.logoutApp{
+    display: none;
+}
+
+
+
+
+
+.logo_mv {width:auto !important; margin: 0 auto; text-align: center}
+.privacy h3 {font-size:14px}
+.privacy p{font-size:12px}
+
+.input-field span label {}

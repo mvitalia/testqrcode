@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>Magic Beep</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"/>
+     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css"/>
+      <!-- Fonts -->
+    <link href='../css/opensans.css' rel='stylesheet' type='text/css'>
+    <!-- Icons -->
+    <link href="css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+     <link href="css/custom.css" rel="stylesheet" type="text/css">
+  
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+	<script src="cordova.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	
+    
+   
+
+    
+</head>
+
+<body>
+ 
+   <!-- HOME PAGE -->
+
+	 <div  data-role="page" id="home"  >
+         <!-- Main Container -->
+         <div class="m-scene" id="main"> 
+         <!-- Sidebars -->
+         <!-- Left Sidebar -->
+        <ul id="slide-out" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+           
+             <div class="nav-avatar">
+               <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+      <div class="content bg-v-2 ">
+           
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+           <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+           <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right" data-activates="slide-out">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+  <!-- Slider -->         
+          <div class="swiper-container slider-sliced">
+            <div class="swiper-wrapper">
+              <div class='swiper-slide'> 
+                <div class='slider-bottom-right valign-wrapper'>
+                  <div class='valign center-align width-100 p-b-5em'>
+                    <h2 class='uppercase'>Magic Beep</h2> 
+                    <p>La tecnologia che ti informa mentre passeggi</p>
+                  </div>
+                </div>
+              </div>
+              <div class='swiper-slide'> 
+                <div class='slider-bottom-left valign-wrapper'>
+                  <div class='valign center-align width-100 p-b-5em'>
+                    <h2 class='uppercase'>Magic Beep</h2> 
+                    <p>Gli oggetti ti parlano</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class='swiper-slide'> 
+                <div class='slider-bottom-right valign-wrapper'>
+                  <div class='valign center-align width-100 p-b-5em'>
+                    <h2 class='uppercase'>Magic Beep</h2> 
+                    <p>Tutte le promozioni e le novità mentre passeggi</p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+           </div>
+          <!-- End of Slider -->
+        <!-- End of Main Contents -->
+       <!-- Footer -->
+       
+        </div>
+        <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+             2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+      </div> 
+      <!-- End of Page Content -->
+        
+     </div>   
+     <!-- End of Page Container -->     
+      
+    </div>
+    <!-- FINE HOME PAGE -->
+   
+    <!-- DATABASE NOTIFICHE -->
+
+	 <div data-role="page" id="database" >
+     <!-- Main Container -->
+     <div class="m-scene" id="main"> 
+        <!-- Sidebars -->
+        <!-- Left Sidebar -->
+        <ul id="slide-out-1" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+          
+             <div class="nav-avatar">
+           <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+         <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+      <div class="content">
+       
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+           <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+            <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right-tre" data-activates="slide-out-1">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="animated fadeinup m-t-70">
+            <!-- titolo -->
+            <div class="project-info">
+              <h2 class="uppercase">Notifiche</h2>
+            </div>
+
+            <!-- Search bar -->
+            <div class="p-20">
+              <nav class="white">
+                <div class="nav-wrapper">
+                  <form>
+                    <div class="input-field">
+                      <input data-role="none" id="search" type="search" placeholder="Search...">
+                      <label for="search"><i class="ion-android-search"></i></label>
+                      <i class="ion-android-close"></i>
+                    </div>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            
+            <div id="lista_datiJson">
+              <!-- Qua aggiungo in dinamico le notifiche -->   
+              
+            </div>
+        </div> 
+         <!-- Footer -->
+          <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+             2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Main Contents -->
+      </div> 
+        <!-- End of Page Content -->
+     </div> 
+     <!-- End of Page Container -->
+    </div>
+    <!-- FINE DATABSE NOTIFICHE -->
+
+    <!-- LOGIN -->
+
+     <div data-role="page" id="login">
+       <!-- Main Container -->
+            <div class="m-scene"> 
+        <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-2" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+           
+            <div class="nav-avatar">
+          
+               <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+       <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+        <div  class="content grey-blue login">
+ <!-- Modal Structure Bottom Sheet -->
+        <div id="box_successoLogin" class="modal bottom-sheet">
+        
+        </div>
+         
+        <!-- Toolbar -->
+      <div  class="toolbar primary-color">
+          <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+           <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right-uno" data-activates="slide-out-2">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+          <!-- Main Content -->
+          <div class="login-form animated fadeinup delay-2 z-depth-1 paragrafo_center">
+               <h1>Login</h1>
+          <form id="loginSincro">
+                <div class="input-field">
+                    <i class="ion-android-contact prefix"></i> 
+                   <input data-role="none" name="usernameLogin" id="usernameLogin" value="" type="text" required>
+                    <label for="usernameLogin">Utente</label>
+                </div>
+                 <div class="input-field" style="margin-bottom:20px;">
+                    <i class="ion-android-lock prefix"></i> 
+                      <input data-role="none"  name="passLogin" id="passLogin" value="" type="password" required>
+                 <label for="passLogin">Password</label>
+                 </div>
+                <div class="box_submit_button">
+                       <input type="submit" data-role="none"  class="waves-effect waves-light btn-large accent-color m-b-20 animated bouncein delay-4" value="Login" id="btn_submit">
+                </div>
+         </form>
+         <span class="m-t-10 m-b-10 block">Non sei ancora iscritto? <a class="primary-text" href="#registrazione">Iscriviti</a></span>
+         <span>Hai dimenticato la password? <a class="primary-text" href="#lostPassword">Recuperala</a></span>
+         
+           <!-- Footer -->
+          <!-- Modal Trigger Bottom Sheet -->
+          <a id="btn_box_Login" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_successoLogin">Bottom Sheet</a>
+         <!--  <a id="btn_box_LoginFailed" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_FailedLogin">Bottom Sheet</a> -->
+        </div><!-- End of Main Contents -->
+        
+      </div> <!-- End of Page Content -->
+    
+     </div> <!-- End of Page Container -->
+       <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <!-- FINE LOGIN -->
+
+    <!-- REGISTRAZIONE -->
+
+    <div data-role="page" id="registrazione">
+           <div class="m-scene"> <!-- Main Container -->
+           <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-otto" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            
+            <div class="nav-avatar">
+          
+               <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+       <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+        <div  class="content  login">
+          <div id="box_registrazione" class="modal bottom-sheet">
+        
+        </div>
+        <!-- Toolbar -->
+         <div  class="toolbar primary-color">
+          <a href="javascript:history.back()" class="open-left">
+            <i class="ion-android-arrow-back"></i>
+          </a>
+          <div class="open-right" id="open-right-otto" data-activates="slide-out-otto">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+          <!-- Main Content -->
+         <div class="registrazione-form animated fadeinup delay-2 z-depth-1 paragrafo_center">
+             
+                 <h1>Iscrizione</h1>
+          <form id="registrazioneSincro">
+               <div class="input-field">
+                    <i class="ion-person prefix"></i> 
+                   <input data-role="none" name="nome" id="nome" value="" type="text" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-person prefix"></i> 
+                   <input data-role="none" name="cognome" id="cognome" value="" type="text" required>
+                    <label for="cognome">Cognome</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-email prefix"></i> 
+                   <input data-role="none" name="email" id="email" value="" type="text" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-map prefix"></i> 
+                   <input data-role="none" name="lnascita" id="lnascita" value="" type="text" required>
+                    <label for="lnascita">Luogo di nascita</label>
+                </div>
+                 <div class="input-field">
+                    <i class="ion-calendar prefix"></i> 
+                   <input data-role="none" name="dataNascita" id="dataNascita" value="" type="date" required>
+                    <label for="dataNascita">Data di nascita</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-home prefix"></i> 
+                   <input data-role="none" name="citta" id="citta" value="" type="text" required>
+                    <label for="citta">Città residenza</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-android-contact prefix"></i> 
+                   <input data-role="none" name="username" id="username" value="" type="text" required>
+                    <label for="username">Utente</label>
+                </div>
+                 <div class="input-field" style="margin-bottom:20px;">
+                    <i class="ion-android-lock prefix"></i> 
+                      <input data-role="none" name="pass" id="pass" value="" type="password" required>
+                 <label for="pass">Password</label>
+                 </div>
+                 <div class="privacy">
+                        <h3>Privacy</h3>
+                        <p>Per avere ulteriori informazioni completa il modulo online con i tuoi dati (che saranno utilizzati esclusivamente per soddisfare la tua richiesta, nel più assoluto rispetto della privacy).</p>
+                        <p>Per maggiori informazioni <a href="#privacy_policy">clicca qui</a> </p>
+                </div>
+                <p class="remember animated bouncein delay-6">
+                  <input data-role="none" type="checkbox" name="privacyMv" id="privacyMv" value="html" required> 
+                  <label for="privacyMv">Acconsento privacy</label>
+                </p>
+                <div class="box_submit_button">
+                       <input type="submit" data-role="none"  class="waves-effect waves-light btn-large accent-color m-b-20 animated bouncein delay-4" value="Invia" id="btn_submit">
+                </div>
+         </form>
+         
+          <!-- Footer -->
+           <a id="btn_box_Registrazione" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_registrazione">Bottom Sheet</a>
+        </div><!-- End of Main Contents -->
+      </div> <!-- End of Page Content -->
+    <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                 <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+     </div> <!-- End of Page Container -->
+      
+    </div>
+    <!-- FINE REGISTRAZIONE -->
+
+    <!-- INVIA INFO NOTIFICA -->
+   <div data-role="page" id="inviaInfo">
+      <div class="m-scene"> <!-- Main Container -->
+      <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-sette" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+          
+            <div class="nav-avatar">
+          
+              <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+       <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+        <div  class="content login">
+       <div id="box_infoNotifica" class="modal bottom-sheet">
+        
+        </div>
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+          <a href="javascript:history.back()" class="open-left">
+            <i class="ion-android-arrow-back"></i>
+          </a>
+          <div class="open-right" id="open-right-sette" data-activates="slide-out-sette">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+          <!-- Main Content -->
+         <div class="registrazione-form animated fadeinup delay-2 z-depth-1 paragrafo_center">
+            <h1>Richiesta informazioni</h1>
+            <form id="inviaInfoNotifica">
+               <div class="input-field">
+                    <i class="ion-person prefix"></i> 
+                   <input data-role="none" name="nomeInfo" id="nomeInfo" value="" type="text" required>
+                    <label for="nomeInfo">Nome</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-person prefix"></i> 
+                   <input data-role="none" name="cognomeInfo" id="cognomeInfo" value="" type="text" required> 
+                    <label for="cognomeInfo">Cognome</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-email prefix"></i> 
+                   <input data-role="none" name="emailInfo" id="emailInfo" value="" type="text" required>
+                    <label for="emailInfo">E-mail</label>
+                </div>
+                <div class="input-field">
+                    <i class="ion-edit prefix"></i> 
+                    <textarea data-role="none" class="materialize-textarea" id="richiestaInfo" name="richiestaInfo" required></textarea> 
+                    <label for="richiestaInfo">Richiesta</label>
+                </div>
+                <div class="privacy">
+                        <h3>Privacy</h3>
+                        <p>Per avere ulteriori informazioni completa il modulo online con i tuoi dati (che saranno utilizzati esclusivamente per soddisfare la tua richiesta, nel più assoluto rispetto della privacy).</p>
+                        <p>Per maggiori informazioni <a href="#privacy_policy">clicca qui</a> </p>
+                </div>
+                <p class="remember animated bouncein delay-6">
+                  <input data-role="none" type="checkbox" name="privacyInfo" id="privacyInfo" value="html" required> 
+                  <label for="privacyInfo">Acconsento privacy</label>
+                </p>
+            </p>
+            <div class="box_submit_button">
+                  <input type="submit" data-role="none"  class="waves-effect waves-light btn-large accent-color m-b-20 animated bouncein delay-4" value="Invia" id="btn_submit_infoNotifica">
+            </div>
+             
+             
+              
+               
+         </form>
+         </div>
+           <a id="btn_box_infoNotifica" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_infoNotifica">Bottom Sheet</a>
+          <!-- Footer -->
+            <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                  <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                  <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        </div><!-- End of Main Contents -->
+      </div> <!-- End of Page Content -->
+  
+     </div> <!-- End of Page Container -->
+    </div>
+     <!-- FINE INFO NOTIFICA -->
+
+     <!-- INVIA INFO MV ITALIA -->
+     <div data-role="page" id="infoMvitalia">
+            <div class="m-scene"> <!-- Main Container -->
+        <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-3" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+           
+            <div class="nav-avatar">
+          
+               <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+         <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+      <div class="content">
+        <div id="box_infoMvitalia" class="modal bottom-sheet">
+        
+        </div>
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+          <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+           <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right-due" data-activates="slide-out-3">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+         <!-- Main Content -->
+        <div class="registrazione-form animated fadeinup delay-2 z-depth-1 paragrafo_center">
+          <!-- Form Inputs -->                 
+            <h1>Richiedi informazioni</h1>
+             <form id="inviaInfoMv">
+            <div>
+              <div class="input-field animated fadeinright">
+                  <input data-role="none" name="nomeMv" id="nomeMv" value="" type="text" required>
+                <label for="nomeMv">Nome</label>
+              </div>
+              <div class="input-field animated fadeinright delay-1">
+                   <input data-role="none" name="cognomeMv" id="cognomeMv" value="" type="text" required>
+                <label for="cognomeMv">Cognome</label>
+              </div>
+            </div>
+            <div class="input-field animated fadeinright delay-2">
+                <input data-role="none" name="emailMv" id="emailMv" value="" type="text" required>
+              <label for="emailMv">E-mail</label>
+            </div>
+            <div class="input-field animated fadeinright delay-3">
+              <textarea data-role="none" class="materialize-textarea" id="richiestaMv" name="richiestaMv" required></textarea> 
+              <label for="richiestaMv">Richiesta</label>
+            </div>
+            <div class="privacy">
+                        <h3>Privacy</h3>
+                        <p>Per avere ulteriori informazioni completa il modulo online con i tuoi dati (che saranno utilizzati esclusivamente per soddisfare la tua richiesta, nel più assoluto rispetto della privacy).</p>
+                        <p>Per maggiori informazioni <a href="#privacy_policy">clicca qui</a> </p>
+            </div>
+            <p class="remember animated bouncein delay-6">
+               <input data-role="none" type="checkbox" name="privacyMv" id="privacyMv" value="html" required/> 
+              <label for="privacyMv">Acconsento privacy</label>
+            </p>
+             <div class="box_submit_button">
+                       <input type="submit" data-role="none"  class="waves-effect waves-light btn-large accent-color m-b-20 animated bouncein delay-4" value="Invia" id="btn_submit_infoMv">
+            </div>
+
+            <div class="wrapper_logo">
+                  <a href="http://www.mvitalia.com/"><img class="logo_mv" src="img/logo_mvitalia.png"/></a>
+            </div>
+       
+            </form>
+          </div>
+            <a id="btn_box_infoMvitalia" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_infoMvitalia">Bottom Sheet</a>
+           <!-- Footer -->
+          <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                  <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        </div> <!-- End of Main Contents -->
+      </div> <!-- End of Page Content -->
+    
+     </div> <!-- End of Page Container -->
+    
+    </div>
+    <!-- FINE INVIO INFO MVITALIA -->
+
+    <!-- LOST RECUPERO PASSWORD -->
+      <div data-role="page" id="lostPassword" data-cache="false">
+         <!-- Main Container -->
+            <div class="m-scene"> 
+        <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-nove" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            
+            <div class="nav-avatar">
+          
+               <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+       <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+        <div  class="content  grey-blue login">
+        <!-- Modal Structure Bottom Sheet -->
+        <div id="box_Password" class="modal bottom-sheet">
+          
+        </div>
+        
+        <!-- Toolbar -->
+      <div  class="toolbar primary-color">
+          <a href="javascript:history.back()" class="open-left">
+            <i class="ion-android-arrow-back"></i>
+          </a>
+          <div class="open-right" id="open-right-nove" data-activates="slide-out-nove">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+          <!-- Main Content -->
+          <div class="login-form animated fadeinup delay-2 z-depth-1 paragrafo_center">
+               <h1>Recupera Password</h1>
+          <form id="recuperoPass">
+                <div class="input-field">
+                    <i class="ion-android-contact prefix"></i> 
+                   <input data-role="none" name="emailRecuperoPass" id="emailRecuperoPass" value="" type="text" required>
+                    <label for="usernameLogin">Inserisci il tuo indirizzo e-mail</label>
+                </div>
+                 
+                <div class="box_submit_button">
+                       <input type="submit" data-role="none"  class="waves-effect waves-light btn-large accent-color m-b-20 animated bouncein delay-4" value="Invia" id="btn_submit_recuperoPassword">
+                </div>
+         </form>
+           <!-- Footer -->
+          <!-- Modal Trigger Bottom Sheet -->
+          <a id="btn_box_recuperoPassword" class="waves-effect waves-light btn-large modal-trigger primary-color width-100 m-b-20" href="#box_Password">Bottom Sheet</a>
+        
+        </div><!-- End of Main Contents -->
+    
+      </div> <!-- End of Page Content -->
+   
+     </div> <!-- End of Page Container -->
+         <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+    </div> 
+    <!-- FINE LOST RECUPERO PASSWORD -->
+
+    <!-- DETTAGLIO NOTIFICA -->
+<div data-role="page" id="notifica" >
+     <div class="m-scene" > <!-- Main Container -->
+        <!-- Sidebars -->
+        <!-- Right Sidebar -->
+        <ul id="slide-out-quattro" class="side-nav">
+        <li>
+          <div class="sidenav-header primary-color">
+            
+             <div class="nav-avatar">
+          
+            <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+      <!-- Page Content -->
+      <div class="content appendiPopup">
+           
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+          <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+          <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right-quattro" data-activates="slide-out-quattro">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+        
+        <!-- Hero Header --> 
+        <div class="h-banner animated fadeindown">
+          <div id="box_img_notifica" class="parallax">
+              
+            <div class="floating-button animated bouncein delay-3">
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="animated fadeinup delay-1">
+          <div class="page-content">
+              <div class="appendDettaglioNotifica">
+              </div>
+              
+              <div class="box_submit_button">
+                <a href="#inviaInfo" class='waves-effect waves-light btn-large accent-color width-50 m-b-20 animated bouncein delay-4'><i class="ion-information-circled"></i> Scrivici</a>
+                <a href="#" onclick="condividiNotifica()" class="waves-effect waves-light btn-large accent-color width-50 m-b-20 animated bouncein delay-4"><i class="ion-android-share-alt"></i> Condividi</a>
+              </div>
+            <!-- Share 
+            <div class="share center-align m-t-30">
+              <h3 class="uppercase">Share it!</h3>
+              <i class="ion-social-facebook p-20 blue-text text-darken-4"></i>
+              <i class="ion-social-twitter p-20 blue-text"></i>
+              <i class="ion-social-pinterest p-20 red-text"></i>
+            </div>-->
+          </div>
+        </div> 
+        <!-- Footer -->
+        <footer class="page-footer primary-color">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+              <div class="center-align">
+               <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright blue darken-1">
+          <div class="container">
+          2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+      
+       
+    </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+</div>
+ 
+    <!-- FINE DETTAGLIO NOTIFICA-->
+
+    <!-- Indoor navigation -->
+
+	 <div  data-role="page" id="locali">
+         <!-- Main Container -->
+         <div class="m-scene"> 
+         <!-- Sidebars -->
+         <!-- Left Sidebar -->
+        <ul id="slide-out-cinque" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            
+             <div class="nav-avatar">
+          
+             <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+        <!-- Page Content -->
+      <div class="content page">
+
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+           <span class="title"><a class="font_colore_titolo" href="#home">Magic Beep</a></span>
+            <span class="SiLogin"></span><span><a class='logoutApp' href='#'><i style='font-size:15px !important;padding-left:15px;'  class='ion-log-out'></i></a></span>
+          <div class="open-right" id="open-right-cinque" data-activates="slide-out-cinque">
+            <i class="ion-android-menu"></i>
+          </div>
+        </div>
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+            <!-- Lista negozi con mappe interne -->
+            <div id="lista_indoornavigation">
+              
+              
+            </div>
+
+          
+            <!-- fine lista indoor navigation -->
+          <!-- Footer -->
+          <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                 <span onclick="openBrowser('https://www.facebook.com/MVitaliaWeb');"><i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+        </div> <!-- End of Main Contents -->
+      
+         
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container --> 
+        
+    </div>
+    <!-- FINE LOCALI -->
+
+     <!-- INIZIO PRIVACY POLICY -->
+     <div  data-role="page" id="privacy_policy">
+       <!-- Main Container -->
+         <div class="m-scene"> 
+         <!-- Sidebars -->
+         <!-- Left Sidebar -->
+        <ul id="slide-out-privacy" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            
+             <div class="nav-avatar">
+          
+             <img class="avatar" src="img/icona_menu.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Magic Beep</h3>
+                <p>Passeggia Aggiornato</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#home" class="no-child"><i class="ion-android-home"></i>Home</a></li>
+        <li><a href="#login"  data-transition="slide" class="no-child"><i class="ion-android-contact"></i>User/Login</a></li>
+        <li><a href="#database" class="no-child"><i class="ion-social-rss"></i>Notizie</a></li>
+        <li><a href="page/mappa.html" class="no-child paginaMappa" data-ajax="false"><i class="ion-map"></i>Punti di interesse</a></li>
+        <li><a href="#locali" class="no-child"><i class="ion-android-apps"></i>Indoor navigation</a></li>
+        <li><a href="#infoMvitalia" class="no-child"><i class="ion-information-circled"></i>Info</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+        <!-- Page Content -->
+      <div class="content page">
+
+        <!-- Toolbar -->
+        <div  class="toolbar primary-color">
+           <a href="javascript:history.back()" class="open-left">
+              <i class="ion-android-arrow-back"></i>
+            </a>
+            <div class="open-right" id="open-right-privacy" data-activates="slide-out-privacy">
+              <i class="ion-android-menu"></i>
+            </div>
+        </div>
+        <!-- Main Content -->
+          <div class="registrazione-form privacy_page animated fadeinup delay-2 z-depth-1">
+              <h1>Privacy Policy</h1>
+         	
+                <h4>1) Diritti degli interessati</h4>
+                <p>
+                  I soggetti a cui si riferiscono i dati personali hanno il diritto, in qualunque momento, di ottenere la conferma dell'esistenza o meno di tali dati e di conoscerne il contenuto e l'origine,verificarne l'esattezza o chiederne l'integrazione o l'aggiornamento, oppure la rettificazione (art. 7 del d.lgs. n. 196/2003).<br>
+                  Ai sensi e per gli effetti del medesimo articolo si ha il diritto di richiedere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, nonch&eacute; di opporsi in ogni caso al loro trattamento.<br>
+                  Con particolare riferimento a quest'ultimo punto, l'interessato, in osservanza dell'art. 7 al suo punto 4, avr&agrave; sempre il diritto di opporsi, in tutto o in parte:<br><br>
+                  
+                  a) per motivi legittimi, al trattamento dei dati personali che lo riguardano, ancorch&eacute; pertinenti allo scopo della raccolta;<br>
+                  b) al trattamento dei dati personali che lo riguardano a fini di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale.<br>
+                  I diritti di cui all'articolo 7 possono essere esercitati con richiesta rivolta senza particolari formalit&agrave; (mediante lettera raccomandata, fax o posta elettronica attraverso i recapiti indicati sul sito stesso) al Titolare, anche tramite un incaricato, alla quale &egrave; fornito idoneo riscontro senza ritardo.<br>
+                  Considerato che lo stato di perfezionamento dei meccanismi automatici di controllo non li rende attualmente immuni da errori e disfunzioni, precisiamo che il presente documento costituisce la normativa del trattamento dei dati personali di questo sito che potr&agrave; essere aggiornata in qualsiasi momento.
+              </p>
+              
+              <br>
+              <h4>2) Modalit&agrave; di trattamento</h4>
+              <p>
+
+              I dati personali sono trattati con strumenti automatizzati per il tempo strettamente necessario a conseguire gli scopi per cui sono raccolti.
+              Specifiche misure di sicurezza sono osservate per prevenire la perdita dei dati, usi illeciti o non corretti ed accessi non autorizzati.
+              </p>
+              <br>
+              <h4>3) Facoltativit&agrave; dei dati trattati</h4>
+              <p>
+
+              A parte quanto specificato per i dati di navigazione, il conferimento dei dati personali indicati nei moduli di richiesta informazioni &egrave; facoltativo.
+              Il mancato conferimento dei dati pu&ograve; comportare l'impossibilit&agrave; di ottenere quanto richiesto.
+              </p>
+              
+              <br>
+              
+              <h4>4) Il titolare del trattamento</h4>
+              <p>
+
+              A seguito della consultazione di questo sito possono essere trattati dati relativi a persone identificate o identificabili.
+              Il Titolare del loro trattamento &egrave; MVitalia con sede legale in Piobesi d'Alba, 12040 (CN), Str. Provinciale 11/A.
+
+              </p>
+              <br>
+              <h4>5) Luogo di trattamento dei dati</h4>
+              <p>
+    I trattamenti connessi ai servizi web di questa applicazione mobile hanno luogo presso la sede della societ&agrave; di gestione di Magic Beep e sono curati solo da personale tecnico incaricato del trattamento e da eventuali collaboratori, incaricati di occasionali operazioni di manutenzione adeguatamente formati alla tutela della riservatezza.
+              </p>
+                      <br>
+              <h4>6) Tipo di dati trattati</h4>
+              <p>
+              a. Dati di navigazione<br>
+              
+              I sistemi informatici e le procedure software preposte al funzionamento di questa applicazione mobile acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet.<br>
+              Si tratta di informazioni che non sono raccolte per essere associate ad interessi identificati, ma che per loro stessa natura potrebbero, attraverso elaborazioni ed associazioni con dati detenuti da terzi, permettere l'identificazione degli utenti.<br>
+              
+              <p>b. Dati forniti volontariamente dall'utente<br>
+                      
+              L'invito facoltativo, esplicito e volontario di posta elettronica agli indirizzi indicati su questo sito comporta la successiva acquisizione dell'indirizzo del mittente, necessario per rispondere alle richieste, nonch&eacute; agli eventuali altri dati personali inseriti nella e-mail.
+              <br><br>
+              c. Cookies<br>
+              
+              Nessun dato personale degli utilizzatori viene in proposito acquisito dalla applicazione mobile.<br>
+              Non viene fatto uso di cookies per la trasmissione di informazioni di carattere personale, n&eacute; vengono utilizzati c.d. Cookies persistenti di alcun tipo, ovvero sistemi per il tracciamento degli utenti. L'uso di c.d. Cookies di sessione (che non vengono memorizzati in modo persistente sul computer dell'utente e si eliminano con la chiusura del browser) &egrave; strettamente limitato alla trasmissione di identificativi di sessione (costituiti da numeri casuali generati dal server) necessari per consentire l'esplorazione sicura ed efficiente del sito.<br>
+              I c.d. Cookies di sessione usati in questo sito evitano il ricorso ad altre tecnologie informatiche che creano potenziale pregiudizio per la riservatezza della navigazione degli utilizzatori e non consentono l'acquisizione di dati personali sensibili identificativi dell'utente.<br>
+              In questo sito si fa uso di cokies provenienti da Social Network (Facebook, You Tube, Twitter) e Servizio Statistiche di Google (Google Analytics).<br /><br />
+              Per consultare l’informativa privacy della società Google, relativa al servizio Google Analytics, La preghiamo di visitare il sito Internet <a href="http://www.google.com/intl/en/analytics/privacyoverview.html" target="_blank">www.google.com/intl/en/analytics/privacyoverview.html</a><br />
+  
+  Per conoscere le norme sulla privacy di Google La preghiamo di vistare il sito Internet <a href="http://www.google.com/intl/it/privacy/privacy-policy.html" target="_blank">www.google.com/intl/it/privacy/privacy-policy.html</a></p>
+                  <br />
+              </p>    
+              <br>
+              <h4>7) Protezione dei dati personali</h4>
+              <p>
+          In questo articolo descriviamo le modalit&agrave; di gestione della applicazione mobile in riferimento al trattamento dei dati personali degli utenti che lo consultano. Si tratta di un'informativa che &egrave; resa ai sensi dell'art. 13 del D.Lgs. n. 196/2003 (Codice in materia di protezione dei dati personali) a coloro che interagiscono con i servizi web, accessibili per via telematica a partire dall'indirizzo: "http://magicbeep.mvclienti.com" corrispondente alla pagina iniziale del sito dei clienti di MVitalia.<br>
+          L'informativa &egrave; resa solo ed esclusivamente per questo sito web e applicazione mobile e non anche per altri siti web o applicazioni mobile eventualmente consultati dall'utente tramite i link presenti sulle pagine del sito medesimo.	
+              </p>
+              <br>                    
+              <h4>8) Diritti ed obblighi</h4>
+              <p>
+              Questa applicazione mobile contiene informazioni e documenti generali relativi a MVitalia pubblicati a solo scopo informativo. Tutte le informazioni, il materiale, le immagini e i documenti presenti su questa applicazione mobile sono tutelati dalle norme sul diritto d'autore e ne &egrave; vietato l'uso senza espresso consenso scritto. Il materiale su questa applicazione mobile sito &egrave; di esclusiva propriet&agrave; di MVitalia.
+            </p>
+        </div><!-- End of Main Contents -->
+      </div> <!-- End of Page Content -->
+    <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">L'esperienza di Magic Beep a contatto con gli oggetti che ti circondano</p>
+                <div class="center-align">
+                <a href="#" onclick="window.open('https://www.facebook.com/MVitaliaWeb', '_system', 'location=yes'); return false;"> <i class="ion-social-facebook m-10 white-text"></i> </span>
+                <a href="#" onclick="window.open('https://plus.google.com/u/0/b/107911645761848757909/+Mvitalia', '_system', 'location=yes'); return false;"> <i class=" ion-social-googleplus m-10 white-text"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+             2017 Magic Beep
+            <a class="grey-text text-lighten-4 right" href="#privacy_policy">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+     </div> <!-- End of Page Container -->
+      
+    </div>
+    <!-- FINE PRIVACY POLICY -->
+
+    <!-- BLOCCO DOVE SI APPENDONO GLI ALERT DELLE NOTIFCHE -->
+    <div class="container_page">
+       
+      </div>  
+  
+
+<script type="text/javascript" src="js/index.js"></script>
+<script src="app.js"></script>
+<script type="text/javascript" src="js/dati.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>   
+<script src="js/materialize.min.js"></script> 
+<script src="js/swiper.min.js"></script>  
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/masonry.min.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/functions.js"></script>
+  
+</body>
+
+</html>

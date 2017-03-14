@@ -1,0 +1,26 @@
+{
+  "name": "ibeacon-scan",
+  "version": "1.0",
+  "title": "iBeacon Scan",
+  "description": "App that scans for iBeacons to be used as a starting point for iBeacons apps",
+  "tags": [
+    {
+      "label": "ibeacon",
+      "type": "platform"
+    },
+    {
+      "label": "ble",
+      "type": "comm"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "index-file": "index.html",
+  "uuid": "8189fb7f-c3dd-4a40-9c39-6c2a5c6060be",
+  "icon": "app-icon.png",
+  "doc-url": "https://evothings.com/2.1/doc/examples/ibeacon-scan.html"
+}
